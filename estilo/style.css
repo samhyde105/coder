@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+/* ================== RESET ================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Neuton", sans-serif;
+    text-decoration: none;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: relative;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.header h1,
+.header p {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+/* ================= MAIN ================= */
+main {
+    padding: 2rem 1rem;
+}
+
+/* ================= GRID GENERAL ================= */
+.grid-ejercicios,
+.grid-nutricion,
+.grid-resenas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ================= ARTÍCULOS ================= */
+article {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+article p {
+    margin-top: 0.5rem;
+}
+
+/* ================= VIDEOS RATIO ================= */
+.ratio {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ================= FORMULARIO CONTACTO ================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.footer__redes img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer__redes img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Hover para videos */
+.ratio iframe {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ratio iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ================= Página Nutrición ================= */
+.grid-nutricion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.grid-nutricion article {
+    flex: 0 0 45%;
+    text-align: center;
+}
+
+.nutricion-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover en imágenes */
+.nutricion-img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.nutricion-img.decorativa {
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+
+/* Navbar oscuro */
+.navbar-general {
+    background-color: #1a1a1a; /* fondo más oscuro */
+}
+
+/* Links normales */
+.navbar-general .nav-link {
+    color: #ffffff; /* blanco */
+    transition: color 0.3s ease;
+}
+
+/* Link activo */
+.navbar-general .nav-link.active {
+    color: #00ff00; /* verde para la página actual */
+}
+
+/* Hover */
+.navbar-general .nav-link:hover {
+    color: #00ff00; /* verde al pasar el mouse */
+}
