@@ -12,7 +12,7 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header text-center py-4">
         <h1>Evolución Saludable</h1>
         <p>Un proceso constante de mejora física y bienestar integral</p>
     </header>
@@ -23,7 +23,8 @@
             <a class="navbar-brand" href="../index.html">Evolución Saludable</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -50,18 +51,18 @@
     </nav>
 
     <!-- MAIN -->
-    <main>
+    <main class="container my-5">
         <h2 class="text-center mb-4">Servicios</h2>
-        <section class="grid-nutricion">
-            <article>
+        <section class="grid-nutricion d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <article class="p-3 border rounded shadow-sm">
                 <h3>Entrenamiento personalizado</h3>
                 <p>Planes de entrenamiento adaptados a tus objetivos, nivel físico y disponibilidad de tiempo.</p>
             </article>
-            <article>
+            <article class="p-3 border rounded shadow-sm">
                 <h3>Plan de nutrición</h3>
                 <p>Asesoramiento nutricional pensado para mejorar tu rendimiento y tu salud de forma sostenible.</p>
             </article>
-            <article>
+            <article class="p-3 border rounded shadow-sm">
                 <h3>Seguimiento y hábitos</h3>
                 <p>Acompañamiento continuo para generar constancia, disciplina y resultados a largo plazo.</p>
             </article>
@@ -69,12 +70,12 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer text-center py-4">
         <p>&copy; 2026 Evolución Saludable. Todos los derechos reservados.</p>
-        <div class="footer__redes">
-            <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../img/yt.png" alt="YouTube"></a>
+        <div class="footer__redes d-flex justify-content-center gap-3">
+            <a href="#"><img src="../img/facebook.png" alt="Facebook" width="32"></a>
+            <a href="#"><img src="../img/instagram.png" alt="Instagram" width="32"></a>
+            <a href="#"><img src="../img/yt.png" alt="YouTube" width="32"></a>
         </div>
     </footer>
 
