@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellByte</title>
+
+    <!-- SEO -->
+    <title>Evolución Saludable | Fitness y Nutrición</title>
+    <meta name="description"
+        content="Entrenamiento personalizado, nutrición y hábitos saludables para transformar tu cuerpo y mente.">
+    <meta name="keywords" content="fitness, entrenamiento, nutrición, bajar de peso, gimnasio, salud">
+    <meta name="author" content="Julio Cáceres">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Evolución Saludable">
+    <meta property="og:description" content="Transformá tu cuerpo con disciplina">
+    <meta property="og:image" content="./img/preview.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap + CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilo/style.css">
 </head>
@@ -12,74 +26,133 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header text-center">
         <h1>Evolución Saludable</h1>
         <p>Un proceso constante de mejora física y bienestar integral</p>
     </header>
 
-    <!-- NAVBAR -->
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-general">
         <div class="container-fluid">
-            
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+                data-bs-target="#navbarSupportedContent" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/ejercicios.html">Ejercicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/nutricion.html">Nutrición</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/resenas.html">Reseñas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                    </li>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/ejercicios.html">Ejercicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/nutricion.html">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/resenas.html">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
     <!-- MAIN -->
     <main class="container my-5">
-        <h2 class="text-center mb-4">Servicios</h2>
-        <section class="grid-nutricion d-grid gap-4"
-            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <article class="p-3 border rounded shadow-sm">
-                <h3>Entrenamiento personalizado</h3>
-                <p>Planes de entrenamiento adaptados a tus objetivos, nivel físico y disponibilidad de tiempo.</p>
-            </article>
-            <article class="p-3 border rounded shadow-sm">
-                <h3>Plan de nutrición</h3>
-                <p>Asesoramiento nutricional pensado para mejorar tu rendimiento y tu salud de forma sostenible.</p>
-            </article>
-            <article class="p-3 border rounded shadow-sm">
-                <h3>Seguimiento y hábitos</h3>
-                <p>Acompañamiento continuo para generar constancia, disciplina y resultados a largo plazo.</p>
-            </article>
+
+        <!-- HERO -->
+        <section class="hero text-center mb-5">
+            <h2>Transformá tu cuerpo y tu mente</h2>
+            <p>Entrenamiento, nutrición y disciplina en un solo lugar</p>
+            <a href="./pages/contacto.html" class="btn-principal">Empezar ahora</a>
         </section>
+
+        <!-- SERVICIOS -->
+        <section>
+            <h2 class="text-center mb-4">Servicios</h2>
+
+            <div class="servicios-grid">
+                <article class="card-servicio">
+                    <h3>Entrenamiento personalizado</h3>
+                    <p>Planes adaptados a tu nivel y objetivos.</p>
+                </article>
+
+                <article class="card-servicio">
+                    <h3>Plan de nutrición</h3>
+                    <p>Mejorá tu rendimiento con alimentación estratégica.</p>
+                </article>
+
+                <article class="card-servicio">
+                    <h3>Seguimiento</h3>
+                    <p>Constancia, disciplina y resultados reales.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PLANES -->
+        <section class="planes text-center my-5">
+            <h2 class="mb-4">Planes</h2>
+
+            <div class="servicios-grid">
+                <article class="card-servicio">
+                    <h3>Básico</h3>
+                    <p>Rutina general</p>
+                    <strong>$10</strong>
+                </article>
+
+                <article class="card-servicio destacado">
+                    <h3>Pro</h3>
+                    <p>Rutina + nutrición</p>
+                    <strong>$20</strong>
+                </article>
+
+                <article class="card-servicio">
+                    <h3>Premium</h3>
+                    <p>Seguimiento completo</p>
+                    <strong>$30</strong>
+                </article>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="beneficios text-center my-5">
+            <h2>¿Por qué elegirnos?</h2>
+
+            <div class="servicios-grid">
+                <article class="card-servicio">
+                    <p>✔ Resultados reales</p>
+                </article>
+                <article class="card-servicio">
+                    <p>✔ Plan personalizado</p>
+                </article>
+                <article class="card-servicio">
+                    <p>✔ Acompañamiento constante</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FRASE -->
+        <section class="frase text-center my-5">
+            <h2>No esperes motivación, creá disciplina</h2>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta text-center">
+            <h2>Empezá hoy</h2>
+            <a href="./pages/contacto.html" class="btn-principal">Contactarme</a>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2026 Evolución Saludable. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Evolución Saludable</p>
+
         <div class="footer__redes">
-            <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="../img/yt.png" alt="YouTube"></a>
+            <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="./img/yt.png" alt="YouTube"></a>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>

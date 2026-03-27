@@ -1,0 +1,42 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+/* CONTENEDOR */
+.contacto-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* FORM */
+.form-contacto {
+    @include m.card;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input,
+    textarea {
+        padding: 0.7rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background: v.$primary;
+        color: white;
+        padding: 0.7rem;
+        border: none;
+        cursor: pointer;
+        transition: v.$transition;
+
+        &:hover {
+            background: v.$primary-dark;
+        }
+    }
+}
+
+/* INFO */
+.info-contacto {
+    margin-top: 3rem;
+}

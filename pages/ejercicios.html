@@ -4,8 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellByte</title>
+
+    <!-- SEO -->
+    <title>Ejercicios | Evolución Saludable</title>
+    <meta name="description" content="Rutinas completas de ejercicios para espalda, pecho, brazos y piernas.">
+    <meta name="keywords" content="ejercicios, gimnasio, rutinas, entrenamiento">
+    <meta name="author" content="Julio Cáceres">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../estilo/style.css">
 </head>
 
@@ -14,75 +23,120 @@
     <!-- HEADER -->
     <header class="header">
         <h1>Evolución Saludable</h1>
-        <p>Un proceso constante de mejora física y bienestar integral</p>
+        <p>Transformá tu cuerpo</p>
     </header>
 
-    <!-- NAVBAR -->
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-general">
         <div class="container-fluid">
-            
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEj"
+                aria-controls="navbarEj" aria-expanded="false" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ejercicios.html">Ejercicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nutricion.html">Nutrición</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resenas.html">Reseñas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarEj">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ejercicios.html">Ejercicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nutricion.html">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resenas.html">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
     <!-- MAIN -->
-    <main>
-        <h2 class="text-center mb-4">Rutinas por grupo muscular</h2>
-        <section class="grid-ejercicios">
-            <article>
-                <h3>Espalda</h3>
-                <div class="ratio"><iframe src="https://www.youtube.com/embed/dOIy_izhvjc" allowfullscreen></iframe>
+    <main class="ejercicios">
+
+        <div class="container my-5">
+
+            <!-- INTRO -->
+            <section class="text-center mb-5">
+                <h2>Rutinas por grupo muscular</h2>
+                <p>Elegí el grupo muscular que querés trabajar y mejorá tu físico progresivamente.</p>
+            </section>
+
+            <!-- GRID -->
+            <section class="grid-ejercicios">
+
+                <!-- ESPALDA -->
+                <article class="card-ejercicio">
+                    <h3>Espalda</h3>
+                    <div class="ratio">
+                        <iframe src="https://www.youtube.com/embed/dOIy_izhvjc" title="Rutina de espalda" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>Rutina completa para fortalecer la espalda.</p>
+                </article>
+
+                <!-- PECHO -->
+                <article class="card-ejercicio">
+                    <h3>Pecho</h3>
+                    <div class="ratio">
+                        <iframe src="https://www.youtube.com/embed/CNusBc4kElM" title="Rutina de pecho" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>Ejercicios clave para desarrollar el pecho.</p>
+                </article>
+
+                <!-- BRAZOS -->
+                <article class="card-ejercicio">
+                    <h3>Brazos</h3>
+                    <div class="ratio">
+                        <iframe src="https://www.youtube.com/embed/QO1qtm6ftOc" title="Rutina de brazos"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>Entrenamiento para bíceps y tríceps.</p>
+                </article>
+
+                <!-- PIERNAS -->
+                <article class="card-ejercicio">
+                    <h3>Piernas</h3>
+                    <div class="ratio">
+                        <iframe src="https://www.youtube.com/embed/9cQKrDmBrHE" title="Rutina de piernas"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>Rutina completa para piernas y glúteos.</p>
+                </article>
+
+            </section>
+
+            <!-- BENEFICIOS -->
+            <section class="text-center mt-5">
+                <h2>Beneficios del entrenamiento</h2>
+
+                <div class="grid-ejercicios mt-4">
+                    <article class="card-ejercicio">
+                        <p>✔ Aumento de masa muscular</p>
+                    </article>
+                    <article class="card-ejercicio">
+                        <p>✔ Mejora de resistencia</p>
+                    </article>
+                    <article class="card-ejercicio">
+                        <p>✔ Más energía diaria</p>
+                    </article>
                 </div>
-                <p>La rutina perfecta para espalda</p>
-            </article>
-            <article>
-                <h3>Pecho</h3>
-                <div class="ratio"><iframe src="https://www.youtube.com/embed/CNusBc4kElM" allowfullscreen></iframe>
-                </div>
-                <p>La rutina perfecta para pecho</p>
-            </article>
-            <article>
-                <h3>Brazos</h3>
-                <div class="ratio"><iframe src="https://www.youtube.com/embed/QO1qtm6ftOc" allowfullscreen></iframe>
-                </div>
-                <p>La rutina perfecta para brazos</p>
-            </article>
-            <article>
-                <h3>Piernas</h3>
-                <div class="ratio"><iframe src="https://www.youtube.com/embed/9cQKrDmBrHE" allowfullscreen></iframe>
-                </div>
-                <p>La rutina perfecta de piernas</p>
-            </article>
-        </section>
+            </section>
+
+            <!-- CTA -->
+            <section class="text-center mt-5">
+                <h2>Empezá hoy</h2>
+                <a href="contacto.html" class="btn-principal">Contactarme</a>
+            </section>
+
+        </div>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2026 Evolución Saludable. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Evolución Saludable</p>
+
         <div class="footer__redes">
             <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
             <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
@@ -90,7 +144,9 @@
         </div>
     </footer>
 
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

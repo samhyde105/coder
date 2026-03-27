@@ -4,99 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WellByte</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- SEO -->
+    <title>Nutrición | Evolución Saludable</title>
+    <meta name="description"
+        content="Planes de alimentación para bajar de peso, mejorar tu salud o aumentar masa muscular.">
+    <meta name="keywords" content="nutrición, dieta, alimentación saludable, fitness, masa muscular">
+    <meta name="author" content="Julio Cáceres">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../estilo/style.css">
 </head>
 
 <body>
+
     <!-- HEADER -->
-    <header class="header text-center py-4">
+    <header class="header">
         <h1>Evolución Saludable</h1>
-        <p>Un proceso constante de mejora física y bienestar integral</p>
+        <p>Transformá tu cuerpo</p>
     </header>
 
-    <!-- NAVBAR -->
+    <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-general">
         <div class="container-fluid">
-            
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNutricion"
+                aria-controls="navNutricion" aria-expanded="false" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ejercicios.html">Ejercicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="nutricion.html">Nutrición</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resenas.html">Reseñas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navNutricion">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejercicios.html">Ejercicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nutricion.html">Nutrición</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resenas.html">Reseñas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
 
-    <main>
-        <h2 class="text-center mb-5">Plan de alimentación según el objetivo</h2>
+    <!-- MAIN -->
+    <main class="nutricion">
 
-        <section class="grid-nutricion">
-            <article>
-                <h3>Alimentación para un abdomen plano</h3>
-                <img src="../img/5fcf0f0ccfd0b8872d419230486b9cb5.jpg" alt="Abdomen plano" class="nutricion-img">
-                <p>Comer sano y bien es la base de una buena salud.</p>
-            </article>
+        <div class="container my-5">
 
-            <article>
-                <h3>Alimentación para subir de peso</h3>
-                <img src="../img/85da0411310346408fe2559d27318a6e.jpg" alt="Subir de peso" class="nutricion-img">
-                <p>Una buena alimentación consciente y un buen descanso ayudan a aumentar la masa muscular.</p>
-            </article>
-        </section>
+            <!-- INTRO -->
+            <section class="text-center mb-5">
+                <h2>Plan de alimentación según tu objetivo</h2>
+                <p>La nutrición es clave para lograr resultados reales. Elegí el enfoque que mejor se adapte a vos.</p>
+            </section>
+
+            <!-- GRID PRINCIPAL -->
+            <section class="grid-nutricion">
+
+                <!-- ABDOMEN -->
+                <article class="card-nutricion">
+                    <h3>Abdomen plano</h3>
+
+                    <img src="../img/5fcf0f0ccfd0b8872d419230486b9cb5.jpg"
+                        alt="Alimentación saludable para abdomen plano" class="nutricion-img">
+
+                    <p>Reducí grasa corporal con alimentos naturales, proteínas magras y control de calorías.</p>
+                </article>
+
+                <!-- VOLUMEN -->
+                <article class="card-nutricion">
+                    <h3>Aumento de masa muscular</h3>
+
+                    <img src="../img/85da0411310346408fe2559d27318a6e.jpg" alt="Comida para aumentar masa muscular"
+                        class="nutricion-img">
+
+                    <p>Aumentá masa muscular con superávit calórico y alimentos ricos en proteínas.</p>
+                </article>
+
+            </section>
+
+            <!-- CONSEJOS -->
+            <section class="consejos text-center mt-5">
+                <h2>Consejos clave</h2>
+
+                <div class="grid-nutricion mt-4">
+                    <article class="card-nutricion">
+                        <p>✔ Tomá suficiente agua</p>
+                    </article>
+                    <article class="card-nutricion">
+                        <p>✔ Consumí proteínas diariamente</p>
+                    </article>
+                    <article class="card-nutricion">
+                        <p>✔ Evitá ultraprocesados</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- FRASE -->
+            <section class="frase text-center mt-5">
+                <h2>Tu cuerpo refleja lo que comés</h2>
+            </section>
+
+            <!-- CTA -->
+            <section class="cta text-center mt-5">
+                <h2>Mejorá tu alimentación hoy</h2>
+                <a href="contacto.html" class="btn-principal">Contactarme</a>
+            </section>
+
+        </div>
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="container text-center">
+        <p>&copy; 2026 Evolución Saludable</p>
 
-            <p>&copy; 2026 Evolución Saludable. Todos los derechos reservados.</p>
-
-            <div class="footer__redes d-flex justify-content-center gap-3 mt-3">
-
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="../img/facebook.png" alt="Facebook" class="redes">
-                </a>
-
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="../img/instagram.png" alt="Instagram" class="redes">
-                </a>
-
-                <a href="https://www.youtube.com.ar" target="_blank">
-                    <img src="../img/yt.png" alt="YouTube" class="redes">
-                </a>
-
-            </div>
-
+        <div class="footer__redes">
+            <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="../img/yt.png" alt="YouTube"></a>
         </div>
     </footer>
 
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

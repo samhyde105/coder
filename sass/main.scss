@@ -1,0 +1,11 @@
+//sass --watch sass/main.scss estilo/style.css
+@use "base";
+@use "variables";
+@use "mixins";
+@use "layout";
+@use "home";
+@use "ejercicios";
+@use "nutricion";
+@use "resenas";
+@use "contacto";
+

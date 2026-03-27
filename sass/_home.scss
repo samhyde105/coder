@@ -1,0 +1,73 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.hero {
+    margin-bottom: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+.btn-principal {
+    display: inline-block;
+    background: v.$primary;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    transition: v.$transition;
+
+    &:hover {
+        background: v.$primary-dark;
+    }
+}
+
+/* GRID */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CARDS */
+.card-servicio {
+    @include m.card;
+    text-align: center;
+
+    strong {
+        display: block;
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+
+    &.destacado {
+        border: 2px solid v.$primary;
+        transform: scale(1.05);
+    }
+}
+
+/* SECCIONES */
+.planes,
+.beneficios {
+    margin-top: 3rem;
+}
+
+.frase {
+    background: v.$primary;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cta {
+    margin-top: 3rem;
+}

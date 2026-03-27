@@ -1,0 +1,46 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+/* GRID */
+.grid-nutricion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CARD */
+.card-nutricion {
+    @include m.card;
+    text-align: center;
+}
+
+/* IMAGEN */
+.nutricion-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* SECCIONES */
+.consejos {
+    margin-top: 3rem;
+}
+
+.frase {
+    background: v.$primary;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cta {
+    margin-top: 3rem;
+}

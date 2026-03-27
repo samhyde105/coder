@@ -1,0 +1,36 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+/* GRID */
+.grid-resenas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    @include m.tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CARDS */
+.card-resena {
+    @include m.card;
+    text-align: center;
+}
+
+/* FRASE */
+.frase {
+    background: v.$primary;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+    margin-top: 3rem;
+}
